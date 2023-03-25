@@ -16,11 +16,11 @@
         global $koneksi;
         $fname = $_POST["fname"];
         $lname = $_POST["lname"];
+        $username = $_POST["username"];
         $email = $_POST["email"];
-        $phone = $_POST["phone"];
-        $password = $_POST["password"];
+        $password = $_POST["pass"];
 
-        $result = mysqli_query($koneksi, "INSERT INTO pengguna (fname,lname,email,phone,password) values ('$fname', '$lname', '$email', ' $phone', '$password')");
+        $result = mysqli_query($koneksi, "INSERT INTO pengguna (fname,lname,username,email,password) values ('$fname', '$lname', '$username' , '$email', '$password')");
         
         return mysqli_affected_rows($koneksi);
     }

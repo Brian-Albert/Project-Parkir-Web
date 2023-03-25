@@ -1,6 +1,11 @@
 <?php
     session_start();
     require 'functions.php';
+    if(isset($_SESSION['user'])){
+        if($_SESSION['type'] == 1){
+            $namaUser = $_SESSION['user'];
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -105,7 +110,7 @@
                         <div class="card">
                             <div class="card-body ml-3">
                                 <div class="card-title">
-                                    <h4>Hi, Selamat Datang ~NamaDepan~ <i class="fa-solid fa-hand-peace ml-1" style="color: #ffb000;"></i></h4>
+                                    <h4>Hi, Selamat Datang ~<?php echo isset($_SESSION['user']) ? $_SESSION['user'] : 'User!'; ?>~ <i class="fa-solid fa-hand-peace ml-1" style="color: #ffb000;"></i></h4>
                                 </div>
                                 <div class="card-text mt-3">
                                     <div class="row">
