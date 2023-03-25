@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="insert.php" method="POST">
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td>
+                    <label for="male"><input type="radio" name="gender" value="m" id="male" required>Male</label>
+                    <label for="female"><input type="radio" name="gender" value="f" id="female" required>Female</label>
+                    <label for="other"><input type="radio" name="gender" value="o" id="other" required>Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Email : </td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Phone No: </td>
+                <td>
+                    <select name="phoneCode" required>
+                        <option selected hidden value="">Select Code</option>
+                        <option value="62">+62</option>
+                        <option value="1">+1</option>
+                        <option value="81">+81</option>
+                        <option value="44">+44</option>
+                    </select>
+                    <input type="phone" name="phone" required>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

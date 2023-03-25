@@ -1,0 +1,18 @@
+<tr>
+    <td> 
+        <span class='jelas'>". $row["id"] . "</span>
+    </td>
+    <td>
+        <span class='jelas'>" . $row["id_pengguna"] . "</span>
+    </td>
+    <td>
+        <span class='jelas'>" . $row["id"] . "</span>
+    </td>
+    <td>
+        <span class='jelas'>" . $row["plat"] . "</span>
+    </td>
+    <td>
+        <span class='jelas'>" . $row["kedatangan"] . "</span>
+    <td>
+        
+    </tr>";
