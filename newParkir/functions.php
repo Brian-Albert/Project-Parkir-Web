@@ -104,7 +104,7 @@
         // // DELETE FROM nama_tabel WHERE nama_kolom = ''?
         // // $insert_nomor = mysqli_query($koneksi,"INSERT INTO detail_booking (lantai, id) VALUES ('$lantai','$nomor') where id is select max(id) from detail_booking ");
 
-        // $insert_data = mysqli_query($koneksi,"INSERT INTO detail_booking (id_pengguna,id,plat,kedatangan,statusB) values ('user_1','$id','$plat','$kedatangan','Unavailable')");
+        // $insert_data = mysqli_query($koneksi,"INSERT INTO detail_booking (username,id,plat,kedatangan,statusB) values ('user_1','$id','$plat','$kedatangan','Unavailable')");
         // header("location:check-in.php");
     } else if (isset($_POST['statusB'])){
         
